@@ -40,7 +40,7 @@
     <div class="row">
         @foreach ($products as $product)
         <div class="col-xl-3 col-lg-3 col-md-4 col-sm-12 text-center border">
-            <a href="/products/{{ $product->id }}"><img src= "/storage/{{ $product->pro_img }}" alt="Card image cap" style="height: 150px; width:auto;" class="pt-3"> </a>
+            <a href="/products/{{ $product->id }}"><img src= "/storage/{{ $product->pro_img }}" alt="product image" style="height: 150px; width:auto;" class="pt-3"> </a>
             <hr>
             <h5>{{ $product->pro_name  }}</h5>
             <hr>

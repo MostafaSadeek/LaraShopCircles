@@ -37,7 +37,7 @@
                     @enderror
 
                     <div>
-                        <img src="/storage/{{$product->pro_img}}" alt="" style="  width: auto;
+                        <img src="/storage/{{$product->pro_img}}" alt="product image" style="  width: auto;
                         height: 100px;">
                     </div>
 
