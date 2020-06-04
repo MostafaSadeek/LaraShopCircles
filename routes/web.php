@@ -24,12 +24,7 @@ return view('admin.index');
 })->middleware(['auth' , 'admin']);
 
 Route::group(['prefix' => 'admin', 'middleware' => 'admin'], function () {
-    Route::get('/products', 'productscontroller@index');
-    Route::get('/products/create', 'productscontroller@create');
-    Route::post('/products', 'productscontroller@store');
-    Route::get('/products/edit/{id}', 'productscontroller@edit');
-    Route::put('/products/{id}', 'productscontroller@update');
-    Route::delete('/products/{id}', 'productscontroller@destroy');
+    Route::resource('products', 'ProductsController');
 });
 
 

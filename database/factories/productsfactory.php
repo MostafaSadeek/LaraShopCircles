@@ -12,5 +12,6 @@ $factory->define(products::class, function (Faker $faker) {
         'pro_code' => $faker->text,
         'pro_img' => $faker->text,
         'pro_price' => $faker->text,
+        'pro_dec' => $faker->text,
     ];
 });
