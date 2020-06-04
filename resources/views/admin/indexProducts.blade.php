@@ -36,7 +36,7 @@
                     {{ $product->pro_price}} $
                 </div>
                 <div class="col-2">
-                    <a href="/admin/products/edit/{{ $product->id }}"><button>Edit</button></a>
+                    <a href="/admin/products/{{ $product->id }}/edit"><button>Edit</button></a>
                 </div>
             </div>
             <hr>

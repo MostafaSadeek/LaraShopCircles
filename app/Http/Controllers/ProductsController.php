@@ -44,7 +44,7 @@ class ProductsController extends Controller
     public function edit($id){
         $product = products::findorfail($id);
 
-        return view('admin.editProducts', [
+        return view('admin.editproducts', [
             'product' => $product
         ]);
     }
